@@ -10,7 +10,9 @@ services:
     ports:
       - "5450:5432"
     volumes:
-      - orus_db:/var/lib/postgresql/data:rw
+      - otus_db:/var/lib/postgresql/data:rw
+      - otus_db_ts_films:/var/lib/postgresql/tspace_films:rw
 
 volumes:
-  orus_db:
+  otus_db:
+  otus_db_ts_films:
